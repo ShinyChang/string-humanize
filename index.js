@@ -1,7 +1,4 @@
-
 var capitalize = require('string-capitalize')
-
-module.exports = humanize
 
 function humanize(string){
   string = string || ''
@@ -13,7 +10,6 @@ function humanize(string){
 
   return capitalize(string)
 }
-
 
 function underscore(string){
   string = string || ''
@@ -31,3 +27,5 @@ function extname(string){
 
   return (index === -1) ? '' : ext
 }
+
+module.exports = humanize
